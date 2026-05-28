@@ -28,7 +28,7 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-ffi
+./ffi
 .dart_tool
 .claude
 .metadata
