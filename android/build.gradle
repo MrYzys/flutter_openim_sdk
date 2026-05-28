@@ -31,9 +31,9 @@ android {
         namespace = "io.openim.flutter_openim_sdk"
     }
 
-    compileSdk = 34
+    compileSdk = 36
 
-    ndkVersion "21.4.7075529"
+    ndkVersion "25.1.8937393"
     externalNativeBuild {
         cmake {
             path "../src/CMakeLists.txt"
