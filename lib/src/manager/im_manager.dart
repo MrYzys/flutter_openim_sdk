@@ -39,7 +39,7 @@ class IMManager {
   void _addNativeCallback(NativeBridge bridge) {
     bridge.setMethodCallHandler((call) {
       try {
-        Logger.print("Flutter :  ${call.method} ${call.arguments['type']} ${call.arguments['data']} $error $stackTrace");
+        Logger.print("Flutter :  ${call.method} ${call.arguments?['type']??''} ${call.arguments?['data']??''}");
         if (_handleNewStyleEvent(call)) {
           return Future.value(null);
         }
